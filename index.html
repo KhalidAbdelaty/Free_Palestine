@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أضف علم فلسطين على صورتك الشخصية
+    </title>
+    <link rel="stylesheet" type="text/css" href="Palestine.css" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <link href='font.css' rel='stylesheet'>
+</head>
+
+<body>
+    <audio autoplay>
+        <source src="Free Palestine.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div class="multiple-text"></div>
+        <h1>أضف علم فلسطين على صورتك الشخصية
+            <small>صورتك_تفرق#</small>
+        </h1>
+        <div class="avatar-upload">
+            <div class="avatar-edit">
+
+                <input type='file' id="imageInput" accept=".png, .jpg, .jpeg" aria-label="Upload Image" />
+
+                <label for="imageInput"></label>
+
+                <!---------------------------------تحيات خااااالد عبد العاطي-------------------------------------->
+                <canvas id="canvas" style="display: none;"></canvas>
+                <br>
+                <!-- وجوده وعدمه واحد -->
+                <img id="watermarkImage" src="Palestine-Overlay.png" alt="Watermark" style="display: none">
+                <br>
+                <!----------------------------------------------------------------------->
+
+            </div>
+            <div class="avatar-preview">
+                <img id="watermarkImage" src="Palestine-Overlay.png" alt="Watermark">
+
+                <div id="imagePreview" style="background-image: url(avatar.png);">
+                    <!-- الصورة المعدلة-->
+                    <img id="watermarkImage" src="Palestine-Overlay.png" alt="Watermark">
+
+                </div>
+            </div>
+            <br>
+            <button id="downloadButton" style="display: none">
+                ⬇️حمل صورتك الجديدة </button>
+        </div>
+    </div>
+
+    <!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="Palestine.js"></script>
+
+</body>
+
+</html>
